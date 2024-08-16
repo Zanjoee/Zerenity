@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+/* Quote container styles */
+.quote-container {
+  height: 100vh; /* Adjust for footer height */
+  width: 100%;
+  background-color: #001219; /* Page background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+/* Footer styles */
+footer {
+  background-color: #00334e; /* Different background color for footer */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: -20px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+.quote-container .quote {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+#feeling-form {
+  margin-bottom: 0;
+}
+
+#feeling-form label {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #f3f3b2;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#feeling {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 2px solid #f3f3b2;
+  margin-bottom: 20px;
+}
+
+.new-quote-btn {
+  padding: 13px 36px;
+  background-color: #f3f3b2;
+  color: #001219;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+  border-radius: 5px;
+}
+
+.new-quote-btn:hover {
+  background-color: #93e0ff;
+}
+
+.quote-container .quote-content {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  min-height: 100px; /* Ensure space is reserved for the quote */
+  margin-top: 20px;
+}
+
+/* Initially, no border for the author element */
+.quote-container .quote-author {
+  font-size: 18px;
+  color: yellow;
+  padding: 16px 32px;
+  margin-top: 20px;
+  border-top: none; /* Remove the border initially */
+}
+
+/* Add the border when a quote is displayed */
+.quote-container .quote-author.with-border {
+  border-top: 1px solid #93e0ff;
+}
+
+@media (max-width: 500px) {
+  .quote-container .quote-content {
+    font-size: 25px;
+    line-height: 1.1;
+  }
+}
+
+/* Center the button on the page */
+#get-another-quote-btn {
+  margin-top: 20px; /* Add some space above the button */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 13px;
+  background-color: #f3f3b2;
+  color: #001219;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+#get-another-quote-btn:hover {
+  background-color: #93e0ff;
+}
+

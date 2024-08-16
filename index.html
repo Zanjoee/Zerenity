@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Zerenity</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="images.png" type="image/png">
+
+</head>
+
+<body>
+
+  <div class="quote-container">
+    <div class="quote">
+      <form id="feeling-form">
+        <label for="feeling">How are you feeling?</label>
+        <select id="feeling" name="feeling">
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="inspired">Inspired</option>
+          <option value="anxious">Anxious</option>
+          <option value="afraid">Afraid</option> <!-- New option -->
+        </select>
+
+        <button type="submit" class="new-quote-btn">Get Quote</button>
+      </form>
+
+      <div class="quote-content" id="quote-content"></div>
+
+      <div class="quote-author" id="quote-author"></div>
+
+      <!-- The button for getting another quote -->
+      <button id="get-another-quote-btn" style="display: none;">Get Another Quote</button>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; Zerenity</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
